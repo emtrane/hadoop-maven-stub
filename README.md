@@ -19,3 +19,5 @@ Run the word count example
 
 View the output
     ./hadoop-0.20 fs -cat /tmp/output/*
+
+Woozle
