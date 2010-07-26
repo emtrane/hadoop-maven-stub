@@ -16,3 +16,6 @@ Run the word count example
 
 View the output
     ./hadoop-0.20 fs -cat /tmp/output/*
+
+To run locally, you can use the vn exec:java plugin
+    mvn exec:java -Dexec.mainClass="com.github.emtrane.Main" -Dexec.args="-i /tmp/input -o /tmp/output"
