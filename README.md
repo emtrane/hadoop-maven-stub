@@ -4,6 +4,9 @@ Example Usage
 Build the project
     mvn assembly:assembly
 
+You're going to want to give it some extra memory:
+    export MAVEN_OPTS="-Xmx1024m"
+
 Populate some input 
     ./hadoop-0.20 fs -put text.file hdfs:///tmp/input
 
@@ -16,6 +19,3 @@ Run the word count example
 
 View the output
     ./hadoop-0.20 fs -cat /tmp/output/*
-
-To run locally, you can use the vn exec:java plugin
-    mvn exec:java -Dexec.mainClass="com.github.emtrane.Main" -Dexec.args="-i /tmp/input -o /tmp/output"
